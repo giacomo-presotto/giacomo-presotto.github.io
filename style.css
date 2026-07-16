@@ -1,0 +1,220 @@
+/* Academic site — Inconsolata monospace style, inspired by stanislaozompi.net */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;700&display=swap');
+
+:root {
+  --max-width: 760px;
+  --text: #111;
+  --muted: #666;
+  --accent: #3a9a5f;
+  --border: #ddd;
+  --bg: #fdfdfd;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inconsolata', 'Courier New', monospace;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+header.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 2.5rem;
+}
+
+header.site-header .site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+header.site-header .site-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.ipa {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+nav.site-nav {
+  display: flex;
+  gap: 1.4rem;
+  font-size: 0.98rem;
+}
+
+nav.site-nav a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav.site-nav a:hover,
+nav.site-nav a.active {
+  color: var(--accent);
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 0.98rem;
+  margin: 0 0 1.2rem 0;
+  width: 100%;
+}
+
+h1.page-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 1.6rem 0;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 2.2rem 0 1rem 0;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 1.6rem 0 0.6rem 0;
+}
+
+p {
+  margin: 0 0 1.1rem 0;
+  text-align: justify;
+}
+
+.profile-photo {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.about-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.pub-list a {
+  font-weight: 400;
+}
+
+a:hover { text-decoration: underline; }
+
+ul.pub-list {
+  list-style: none;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+ul.pub-list li {
+  margin-bottom: 1rem;
+  font-size: 0.98rem;
+  text-align: left;
+}
+
+.pub-year {
+  color: var(--muted);
+  font-size: 0.9em;
+}
+
+.bibtex {
+  margin-top: 0.3rem;
+}
+
+.bibtex summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 0.85rem;
+  user-select: none;
+}
+
+.bibtex summary:hover {
+  color: var(--accent);
+}
+
+.bibtex pre {
+  background: #f4f4f4;
+  border: 1px solid var(--border);
+  padding: 0.7rem;
+  font-size: 0.8rem;
+  overflow-x: auto;
+  margin: 0.4rem 0 0 0;
+  white-space: pre-wrap;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-list .label {
+  color: var(--muted);
+  font-weight: 700;
+  display: inline-block;
+  min-width: 8em;
+}
+
+footer.site-footer {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.cv-button {
+  display: inline-block;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.5rem 1.1rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-radius: 3px;
+}
+
+.cv-button:hover {
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+}

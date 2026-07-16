@@ -1,0 +1,239 @@
+% Minimal Academic CV — single file, Overleaf-safe (pdfLaTeX)
+\documentclass[10pt,a4paper]{article}
+
+% -------- Encoding & fonts --------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+
+% -------- Layout --------
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+% -------- Utilities --------
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% -------- Section styling (minimal) --------
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+\titlespacing*{\subsection}{0pt}{8pt}{4pt}
+
+\newcommand{\sectionline}{\leaders\hrule height 0.6pt\hfill\kern0pt}
+
+
+% -------- Helper: robust two-column row (no tabularx) --------
+\newlength{\yearsw}\setlength{\yearsw}{3.2cm}
+\newcommand{\cvrow}[2]{%
+  \noindent
+  \parbox[t]{\yearsw}{\raggedright #1}%
+  \hspace{0.8em}%
+  \parbox[t]{\dimexpr\textwidth-\yearsw-0.8em\relax}{#2}%
+  \par\vspace{2pt}%
+}
+
+% -------- PDF meta --------
+\hypersetup{
+  pdftitle={Giacomo Presotto --- Curriculum vitae},
+  pdfauthor={Giacomo Presotto}
+}
+
+\begin{document}
+
+% ===== Header =====
+{\LARGE \textbf{Giacomo Presotto}}\par
+\vspace{2pt}
+Institute for Romance Languages and Literatures \textbullet{} Norbert-Wollheim-Platz 1 \textbullet{} 60629 Frankfurt am Main, Germany\par
+Phone: +49 (0)69 79 8-32054 \textbullet{} Email: \href{mailto:presotto@em.uni-frankfurt.de}{presotto@em.uni-frankfurt.de}\par
+\rule{\textwidth}{1.5pt}
+
+% % ===== Personal information =====
+% \section*{Personal information}
+% Born: 17 June 1996 --- Padua, Italy \textbullet{} Residence: Frankfurt am Main, Germany
+
+
+% ===== Education =====
+\section*{\Large Employment \sectionline}
+
+
+\cvrow{2024 --- present}{Researcher (Wissenschaftlicher Mitarbeiter) within the project \textit{Negation in Language and Beyond}, Goethe University Frankfurt}
+
+
+% ===== Education =====
+\section*{\Large Education \sectionline} 
+\cvrow{2021 --- 2025}{\textbf{Ph.D. in Linguistics}, Goethe University Frankfurt\\
+Summa cum laude}
+
+\cvrow{2018 --- 2020}{\textbf{M.A. in Linguistics}, University of Padua\\
+110/110 \textit{cum laude}}
+
+\cvrow{2015 --- 2018}{\textbf{B.A. in Literature and Linguistics}, University of Padua\\
+110/110 \textit{cum laude}}
+
+\subsection*{Other}
+
+\cvrow{2026}{\textbf{University of Edinburgh}\\ research stay (April -- May) \\ Host: Rob Truswell}
+
+\cvrow{2023}{\textbf{University of Pennsylvania}\\ research stay (Spring Term) \\ Host: Martin Salzmann}
+
+\cvrow{2022}{\textbf{University of Granada}\\ data collection stay (May -- June)\\ Host: Cristóbal Lozano}
+
+\subsection*{Summer/winter-schools}
+\cvrow{2022}{\textbf{CreteLing Summer school 2022}, University of Rethymno, Crete}
+\cvrow{2022}{\textbf{Intensive Remote School in Theoretical Linguistics (IRS)}, online}
+\cvrow{2021}{\textbf{Winter school in Linguistics}, University of Verona (held online)}
+\cvrow{2019}{\textbf{EGG Summer school 2019}, University of Wroc\l aw}
+
+
+% ===== Research interests =====
+\section*{\Large Research interests  \sectionline}
+Formal Syntax; Minimalism; Experimental syntax; Grammar--parser interface; Sentence processing
+
+
+
+% ===== Publications =====
+\section*{\Large Publications \sectionline}
+
+\subsection*{Peer-reviewed Journal Papers}
+
+\cvrow{2024}{\textbf{Presotto, G.}, Torregrossa, J. (2024). ``Intervention and amelioration effects in the acquisition of Spanish object relative clauses: the role of word order and DOM''. \textit{Glossa: a journal of general linguistics}.}
+
+
+\subsection*{Proceedings Papers (Peer-reviewed abstracts)}
+
+
+\cvrow{2024}{Presotto, G. (2024). ``On the morphosyntax of Spanish (object) relative clauses''. \textit{ConSOLE XXXII: Proceedings of the 32nd Conference of the Student Organization of Linguistics in Europe} (17--19 January 2024, Queen Mary University of London).}
+
+\cvrow{2024}{Presotto, G. (2024). ``The interaction between grammar and processing in intervention locality''. \textit{U. Penn Working Papers in Linguistics}, 30.1.}
+\cvrow{2024}{Mattiuzzi, T., \textbf{Presotto, G.}, Koehlich, V. (2024). ``Influential inflection. Testing the role of overt morphology in the distribution of Italian colour adjectives''. \textit{ConSOLE XXXI: Proceedings of the 31st Conference of the Student Organization of Linguistics in Europe} (22--24 February 2023, Bielefeld University).}
+
+% ===== Talks =====
+\section*{\Large Presentations \sectionline}
+
+\subsection*{Refereed Conference and Workshop Presentations}
+
+
+\cvrow{2026}{Mattiuzzi, T., \textbf{Presotto, G.}, Poletto, C. ``From BigDP to BigNegP: explaining the Anti-Non-Strict Gap''. Talk at \textit{PLC50 (50th Penn Linguistics Conference)}, Univeristy of Pennsylvania, 28 Feb.--01 Mar..}
+
+
+
+\cvrow{2026}{\textbf{Presotto, G.} Mattiuzzi, T., Poletto, C. ``Divide et Impera: Negative Concord as Quantifier Splitting''. Poster at \textit{IGG 51}, Univeristy of Udine, 12--14 Feb.}
+
+
+\cvrow{2025}{Sgrizzi, T. \textbf{Presotto, G.}, Torregrossa, J. ``Extending the Growing Trees Hypothesis: The role of structural complexity and featural intervention in older children's syntactic development''. Talk at \textit{GALA 2025}, Tours (France), 11--13 Sep.}
+
+
+\cvrow{2025}{Sgrizzi, T. \textbf{Presotto, G.}, Torregrossa, J. ``Structural Complexity and Featural Intervention: Extending the Growing Trees Hypothesis Beyond Infancy''. Lightning talk at \textit{Child Language Symposium 2025}, University of Reading, 08--10 Sep.}
+
+
+\cvrow{2025}{\textbf{Presotto, G.}, Caloi, I., Torregrossa, J. ``We don't want no trouble with negative concord''. Poster at \textit{IGG50}, University of Padua, 19--21 Feb.}
+\cvrow{2024}{Presotto, G. ``On the syntax and processing of Spanish object relative clauses''. Poster at \textit{IGG49}, IUSS Pavia, 22--23 Feb.}
+\cvrow{2024}{Presotto, G. ``Amelioration effects in adult comprehension of Spanish ORCs: the role of syntax and processing''. Talk at \textit{ConSOLE32}, Queen Mary University of London, 17--19 Jan.}
+\cvrow{2023}{Torregrossa, J., \textbf{Presotto, G.} ``Ameliorating cues in the comprehension of object relative clauses in child Spanish: assessing the interaction between DOM and word order''. Poster at \textit{BUCLD48}, online, 2--5 Nov.}
+\cvrow{2023}{Presotto, G. ``Differential object marking makes Spanish ORCs easier''. Talk at \textit{LSRL53}, INALCO (Paris), 27--29 Jun.}
+\cvrow{2023}{Mattiuzzi, T., \textbf{Presotto, G.}, Koehlich, V. ``Colourful modifiers. How overt morphology restricts the distribution of Italian adjectives''. Talk at \textit{LSRL53}, INALCO (Paris), 27--29 Jun.}
+\cvrow{2023}{Presotto, G. ``How redundancy affects syntax: evidence from Spanish ORCs''. Poster at \textit{CGG32}, University of the Basque Country, 24--26 Apr.}
+\cvrow{2023}{Presotto, G. ``Locality at the interface''. Talk at \textit{Workshop on Locality in Theory, Processing, and Acquisition}, University of Pennsylvania, 31 Mar--1 Apr.}
+\cvrow{2023}{Presotto, G. ``How much is too much? The impact of redundancy on syntax''. Talk at \textit{PLC47 (47th Penn Linguistics Conference)}, University of Pennsylvania, 18--19 Mar.}
+\cvrow{2023}{Koehlich, V., Mattiuzzi, T., \textbf{Presotto, G.} ``Influential inflection''. Poster at \textit{ConSOLE31}, University of Bielefeld, 22--24 Feb.}
+\cvrow{2022}{Presotto, G. ``The role of DOM in Spanish children's comprehension of ORCs''. Talk at \textit{ExMorph}, University of Vienna, 27--28 Oct.}
+
+\subsection*{Invited Talks}
+
+\cvrow{2026}{Presotto, G. ``Island extraction and the source of locality''. Talk at \textit{Meaning and Grammar Research Group}, University of Edinburgh, 12 May}
+\cvrow{2025}{Presotto, G. ``Negative Concord in non-standard English and German''. Talk at \textit{Theoretical Approaches to Negation}, University of Padua, 19 Sep.}
+\cvrow{2023}{Presotto, G. ``Neither here nor there. Grammar and processing in the theory of locality''. CLT seminar, Universitat Autònoma de Barcelona (online), 19 May.}
+\cvrow{2022}{Presotto, G. ``Tame ORCs. Insights on ameliorations to intervention effects''. \textit{Padova--Frankfurt Colloquium}, University of Padua, 21 Dec.}
+\cvrow{2022}{Presotto, G. ``Spanish DOM and subject--object asymmetries in RCs''. Talk at the University of Granada, 23 May.}
+
+\subsection*{Other Presentations}
+
+\cvrow{2025}{Poletto, C., Mattiuzzi, T., \textbf{Presotto, G.} ``Negative concord as doubling''. Talk at \textit{Theoretical Approaches to Negation}, University of Padua, 19 Sep.}
+
+
+\cvrow{2025}{\textbf{Presotto, G.}, Caloi, I., Poletto, C., Torregrossa, J., Toniolo, L. ``Crosslinguistic Patterns in Negative Concord: Evidence from British English and Standard German''. Poster at \textit{NegLab Summer Retreat 2025}, Schmitten, 08 Jun.}
+
+\cvrow{2024}{\textbf{Presotto, G.}, Caloi, I., Poletto, C., Torregrossa, J., Toniolo, L. ``There is some discord in negative concord''. Poster at \textit{NegLab I Workshop}, Goethe University Frankfurt, 17--18 Dec.}
+\cvrow{2024}{\textbf{Presotto, G.}, Mattiuzzi, T., Koehlich, V. ``Lack of inflection and the distribution of attributive adjectives in Italian''. Poster at \textit{Closing Workshop of RTG `Nominal Modification'}, Goethe University Frankfurt, 23--24 May.}
+
+\cvrow{2024}{Presotto, G. ``How do you wonder where locality is?''. Talk at the \textit{Romance Colloquium}, Goethe University Frankfurt, 6 Feb.}
+
+\cvrow{2023}{Presotto, G. ``On the syntax and processing of Spanish ORCs''. Talk at \textit{RTG Nominal Modification Colloquium}, Goethe University Frankfurt, 14 Nov.}
+
+\cvrow{2023}{Presotto, G. ``On how to localise locality''. Talk at the \textit{RTG Nominal Modification Retreat}, Bad Homburg, 29--30 Jun.}
+
+\cvrow{2022}{Presotto, G. ``Better alone than in bad company. Trade-offs between redundant and deficient cues assist the integration of ORCs''. Talk at \textit{RTG Nominal Modification Colloquium}, Goethe University Frankfurt, 13 Dec.}
+
+
+\cvrow{2022}{\textbf{Presotto, G.}, Mattiuzzi, T., Koehlich, V. ``Influential inflection''. Talk at \textit{WONDo}, Goethe University Frankfurt, 10--11 Nov.}
+
+\cvrow{2022}{Presotto, G. ``Testing Spanish ORCs. Preliminary results with child and adult populations''. Talk at the \textit{RTG Nominal Modification Retreat}, Fulda, 1--2 Jul.}
+
+
+
+\cvrow{2022}{Presotto, G. ``On the disambiguation of subjects and objects in ORCs. Some thoughts on ameliorations in intervention effects''. Talk at the \textit{RTG Nominal Modification Colloquium}, Goethe University Frankfurt, 15 Feb.}
+
+
+\cvrow{2021}{Presotto, G. ``Fantastic ORCs and where to find them. Inspecting subject--object asymmetries in relative clauses''. Talk at the \textit{Romance Colloquium}, Goethe University Frankfurt, 30 Nov.}
+
+\cvrow{2021}{Presotto, G. ``First steps into Merge''. Talk at the \textit{RTG Nominal Modification Retreat}, Goethe University Frankfurt (online), 24--25 Jun.}
+
+\cvrow{2020}{Presotto, G. ``Re(lati)vised Minimality. Reshaping the computation of intervention effects''. Talk at the \textit{Romance Colloquium}, Goethe University Frankfurt (online), 8 Dec.}
+
+% ===== Student advising / supervision =====
+\section*{\Large Student advising / supervision \sectionline}
+\begin{itemize}[leftmargin=1.2em,itemsep=2pt,topsep=2pt]
+  \item Michela Salvadore (University of Padua). MA thesis: ``Negative Concord or Double Negation? The Case of German''. (Second advisor)
+  \item Marta Freddi (University of Padua). MA thesis: ``The acquisition of negation by L2 German L1 Italian speaker''. (External advisor)
+\end{itemize}
+
+% ===== Academic service =====
+\section*{\Large Academic service \sectionline}
+\subsection*{Conference and workshop organisation}
+\cvrow{Nov 2022}{\textbf{Workshop:} \textit{Word Order in the Nominal Domain (WONDo)} --- Organising committee, Goethe University Frankfurt}
+
+%\subsection*{Other}
+\cvrow{Jan 2022}{\textbf{Winter school:} \textit{Intensive Remote School in Theoretical Linguistics (IRS)} --- Organising team, online}
+\cvrow{2020--2021}{\textbf{Talk series:} \textit{Linguistic Flash Mobs} --- Organising team; available online at this \href{https://www.youtube.com/@linguisticsflash-mobs.epic6079}{\underline{link}}}
+
+
+\subsection*{Reviewing}
+
+
+\begin{itemize}
+    \item Articles: Linguistic Variation; Languages; Language and Cognition; International Journal of Multilingualism
+
+\item Abstracts: IGG; ConSOLE
+
+\end{itemize}
+
+
+
+% % ===== Methods / Programming / Data analysis =====
+% \section*{\Large Methods, programming, and data analysis \sectionline}
+% PCIbex; R; \LaTeX
+
+% ===== Languages =====
+\section*{\Large Languages and Software \sectionline}
+\begin{itemize}
+    \item \textbf{Natural:} Italian, English (fluent), Spanish (conversational), German (basic knowledge), Latin (working knowledge)
+
+    \item \textbf{Formal:} R, \LaTeX, HTML, PCIbex
+    
+\end{itemize}
+
+% \cvrow{Italian}{native}
+% \cvrow{English}{fluent}
+% \cvrow{Spanish}{conversational}
+% \cvrow{German}{basic knowledge}
+% \cvrow{Latin}{working knowledge}
+
+\vfill
+\rule{\textwidth}{0.4pt}
+\footnotesize Last updated: \today
+
+\end{document}
