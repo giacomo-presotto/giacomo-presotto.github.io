@@ -178,21 +178,33 @@ ul.pub-list li {
   white-space: pre-wrap;
 }
 
+.contact-intro {
+  margin-bottom: 1.5rem;
+}
+
 .contact-list {
-  list-style: none;
-  padding: 0;
   margin: 0;
 }
 
-.contact-list li {
-  margin-bottom: 0.5rem;
+.contact-row {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
 }
 
-.contact-list .label {
+.contact-row dt {
   color: var(--muted);
   font-weight: 700;
-  display: inline-block;
   min-width: 8em;
+  flex-shrink: 0;
+}
+
+.contact-row dd {
+  margin: 0;
+}
+
+.contact-row .email {
+  display: block;
 }
 
 footer.site-footer {
