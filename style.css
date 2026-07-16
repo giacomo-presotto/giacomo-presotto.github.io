@@ -207,6 +207,11 @@ ul.pub-list li {
   display: block;
 }
 
+.contact-intro .email {
+  font-weight: 700;
+  color: var(--text);
+}
+
 footer.site-footer {
   margin-top: 4rem;
   padding-top: 1rem;
