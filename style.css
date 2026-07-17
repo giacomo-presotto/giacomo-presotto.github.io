@@ -235,3 +235,33 @@ footer.site-footer {
   color: #fff;
   text-decoration: none;
 }
+
+@media (max-width: 600px) {
+  .wrap {
+    padding-top: 2rem;
+  }
+
+  header.site-header {
+    margin-bottom: 2rem;
+  }
+
+  nav.site-nav {
+    gap: 0.65rem 1.1rem;
+    flex-wrap: wrap;
+  }
+
+  .about-body {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .profile-photo {
+    width: 155px;
+    height: 155px;
+  }
+
+  .about-text p {
+    text-align: left;
+  }
+}
